@@ -1,0 +1,73 @@
+.thanks__block {
+    display: none;
+    position: relative;
+    width: 843px;
+    margin: 0 auto;
+    margin-top: -150px;
+    padding-bottom: 200px;
+
+    @media screen and (max-width:1150px) {
+        width: 600px;
+        margin-top: -100px;
+        padding-bottom: 150px;
+    }
+
+    @media screen and (max-width:767px) {
+        width: 350px;
+        margin-top: -32px;
+        padding-top: 80px;
+        padding-bottom: 200px;
+    }
+
+    @media screen and (max-width:360px) {
+        width: 320px;
+    }
+}
+
+.thanks__inner {
+    background-image: url(../img/icons/flower-top.svg), url(../../img/icons/flower-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: top right, bottom left;
+    background-size: 200px;
+
+    background-color: #604384;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 95px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    @media screen and (max-width:767px) {
+        background-size: auto;
+    }
+}
+
+.thanks__title {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    @media screen and (max-width:767px) {
+        font-size: 30px;
+    }
+}
+
+.thanks__desc {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.42;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 500px;
+
+    @media screen and (max-width:767px) {
+        font-size: 15px;
+        max-width: 320px;
+    }
+}

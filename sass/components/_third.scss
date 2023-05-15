@@ -1,0 +1,230 @@
+.third__block {
+    display: none;
+    position: relative;
+    width: 843px;
+    margin: 0 auto;
+    margin-top: -150px;
+    padding-bottom: 200px;
+
+    @media screen and (max-width:1150px) {
+        width: 600px;
+        margin-top: -100px;
+        padding-bottom: 150px;
+    }
+
+    @media screen and (max-width:767px) {
+        width: 350px;
+        margin-top: -32px;
+        padding-top: 122px;
+        padding-bottom: 200px;
+    }
+
+    @media screen and (max-width:360px) {
+        width: 320px;
+    }
+}
+
+.third__back {
+    position: absolute;
+    top: 0;
+    left: -60px;
+
+    background: #E1D2F9;
+    border-radius: 8.5px;
+    padding: 9.3px;
+    cursor: pointer;
+
+    img {
+        display: block;
+    }
+
+    @media screen and (max-width:767px) {
+        left: 0;
+        top: 57px;
+    }
+}
+
+.third__title {
+    max-width: 100%;
+    margin: 0 auto 25px auto;
+    text-align: center;
+    background: #604384;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 25px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--secondary-font);
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 1;
+    font-weight: 600;
+
+    @media screen and (max-width:1150px) {
+        font-size: 23px;
+        padding: 20px 0;
+        margin-bottom: 15px;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 19px;
+        padding: 21px 0;
+        margin-bottom: 55px;
+    }
+}
+
+.third__address {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+.address__image {
+    display: block;
+}
+
+.address__text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.address__text span {
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 1.2;
+    color: #4F4662;
+
+    @media screen and (max-width:767px) {
+        font-weight: 400;
+        font-size: 15px;
+    }
+}
+
+.third__order {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    padding: 50px 50px 45px 50px;
+
+    @media screen and (max-width:1150px) {
+        padding: 35px 35px 25px 35px;
+    }
+
+    @media screen and (max-width:767px) {
+        padding: 40px 20px;
+    }
+}
+
+.third__order+.third__order {
+    margin-top: 25px;
+}
+
+.third__place {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 40px;
+
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--accent-text-color);
+
+    @media screen and (max-width:1150px) {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (max-width:767px) {
+        align-items: center;
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    @media screen and (max-width:360px) {
+        font-size: 13px;
+    }
+}
+
+.third__place:nth-child(1) {
+    @media screen and (max-width:767px) {
+        margin-bottom: 25px;
+    }
+}
+
+.third__list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.third__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third__service {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #4F4662;
+
+    span {
+        color: #8F46DA
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 15px;
+    }
+
+    @media screen and (max-width:360px) {
+        font-size: 14px;
+    }
+}
+
+.third__close_service {
+    width: 27px;
+    height: 27px;
+    background-color: #E1D2F9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.third__add {
+    background: #AE99DD;
+    border-radius: 30px;
+    width: 100%;
+    padding: 17px 0;
+    cursor: pointer;
+
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 1.1;
+    color: #FFFFFF;
+
+
+    @media screen and (max-width:1150px) {
+        padding: 12px 0;
+    }
+
+    @media screen and (max-width:767px) {
+        font-size: 19px;
+    }
+}

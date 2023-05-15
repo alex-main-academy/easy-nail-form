@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EASY NAILS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
+    <link rel="icon" sizes="any" type="image/svg+xml" href="">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">Easy nails</h1>
+                <p class="hero__desc">Задоволення від манікюру</p>
+            </div>
+        </section>
+
+        <section class="entry">
+            <!-- entry block -->
+            <div class="entry__block js-entry-block">
+                <p class="entry__title">Оформлення запису</p>
+                <div class="entry__order">
+                    <p class="order__place"><img src="img/icons/place.svg" alt="place icon" width="20"
+                            height="20">Виберіть Ваше місцезнаходження</p>
+                    <button type="button" class="place__add js-open-city"><img src="img/icons/plus.svg" alt="plus icon"
+                            width="24" height="25"></button>
+                </div>
+            </div>
+            <!-- city block -->
+            <div class="city__block js-city-block">
+                <button type="button" class="city__back js-back-to-entry">
+                    <img src="img/icons/back.svg" alt="back icon" width="21" height="21">
+                </button>
+                <p class="city__title">Виберіть Ваше місцезнаходження</p>
+                <div class="city__form">
+                    <div>
+                        <p class="city__place">
+                            <img src="img/icons/place.svg" alt="place icon" width="20" height="20">
+                            Виберіть місто в якому знаходитесь
+                        </p>
+                        <button class="city__select js-select-city">
+                            <span>Київ</span>
+                            <img src="img/icons/bottom-arrow.svg" alt="bottom arrow" width="20" height="20">
+                        </button>
+                        <ul class="select__list js-select-city-list">
+                            <li class="select__item js-select-city-item">
+                                <p class="select__name">Житомир</p>
+                            </li>
+                            <li class="select__item js-select-city-item">
+                                <p class="select__name">Львів</p>
+                            </li>
+                            <li class="select__item js-select-city-item">
+                                <p class="select__name">Івано-Франківськ</p>
+                            </li>
+                            <li class="select__item js-select-city-item">
+                                <p class="select__name">Коломия</p>
+                            </li>
+                            <li class="select__item js-select-city-item">
+                                <p class="select__name">Київ</p>
+                            </li>
+                            <li class="select__item js-select-city-item">
+                                <p class="select__name">Дніпро</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="city__place">
+                            <img src="img/icons/place.svg" alt="place icon" width="20" height="20">
+                            Виберіть район в якому знаходитесь
+                        </p>
+                        <button class="city__select js-select-area">
+                            <span>Печерський район</span>
+                            <img src="img/icons/bottom-arrow.svg" alt="bottom arrow" width="20" height="20">
+                        </button>
+                        <ul class="select__area_list js-select-area-list">
+                            <li class="select__item js-select-area-item">
+                                <p class="select__name">Шевченківський район</p>
+                            </li>
+                            <li class="select__item js-select-area-item">
+                                <p class="select__name">Святошиньский район</p>
+                            </li>
+                            <li class="select__item js-select-area-item">
+                                <p class="select__name">Солом'янський район</p>
+                            </li>
+                            <li class="select__item js-select-area-item">
+                                <p class="select__name">Шевченківський район</p>
+                            </li>
+                            <li class="select__item js-select-area-item">
+                                <p class="select__name">Святошиньский район</p>
+                            </li>
+                            <li class="select__item js-select-area-item">
+                                <p class="select__name">Шевченківський район</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="button" class="city__next js-open-second">Далі</button>
+                </div>
+            </div>
+            <!-- second block -->
+            <div class="second__block js-second-block">
+                <button type="button" class="second__back js-back-to-city">
+                    <img src="img/icons/back.svg" alt="back icon" width="21" height="21">
+                </button>
+                <p class="second__title">Оформлення запису</p>
+                <div class="second__order">
+                    <p class="second__place"><img src="img/icons/place.svg" alt="place icon" width="20"
+                            height="20">Виберіть ваше місце знадходження</p>
+                    <div class="second__address address">
+                        <img src="img/icons/address.svg" alt="address icon" class="address__image" width="40"
+                            height="40">
+                        <p class="address__text">
+                            <span class="address__city">м. <span class="js-city-name">Київ</span></span>
+                            <span class="address__street"><span class="js-city-area">Святошиньский район</span></span>
+                        </p>
+                    </div>
+                    <button type="button" class="second__add js-back-to-city">ЗМІНИТИ</button>
+                </div>
+                <div class="second__order">
+                    <p class="second__place"><img src="img/icons/service.svg" alt="place icon" width="23"
+                            height="23">Виберіть послугу</p>
+                    <button type="button" class="second__add js-open-service"><img src="img/icons/plus.svg"
+                            alt="plus icon" width="24" height="25"></button>
+                </div>
+            </div>
+            <!-- service block -->
+            <div class="service__block js-service-block">
+                <button type="button" class="service__back js-back-to-second">
+                    <img src="img/icons/back.svg" alt="back icon" width="21" height="21">
+                </button>
+                <p class="service__title">Оберіть послугу</p>
+                <ul class="service__list">
+                    <li class="service__item js-service-item">
+                        <button class="service__close">
+                            <img src="img/icons/close-service.svg" alt="close icon" width="10" height="10"
+                                class="service__close_image">
+                        </button>
+                        <h3 class="service__subtitle"><i>гігієнічний манікюр</i><span class="service__desc">
+                                <span>це один з видів манікюру, при якому ми робимо манікюр за допомогою спеціального
+                                    апарату і відповідних насадок (фрез)</span>
+                                <img src="img/icons/desc.svg" alt="description icon" class="service__desc" width="15"
+                                    height="15">
+                            </span></h3>
+                        <p class="service__price">
+                            <span class="service__price_item">200 - 250 грн</span>
+                            <span class="service__price_icon">
+                                <img src="img/icons/checked.svg" alt="checked icon" width="22" height="15">
+                            </span>
+                        </p>
+                    </li>
+                    <li class="service__item js-service-item">
+                        <button class="service__close">
+                            <img src="img/icons/close-service.svg" alt="close icon" width="10" height="10"
+                                class="service__close_image">
+                        </button>
+                        <h3 class="service__subtitle"><i>Покриття гель лаком</i><span class="service__desc">
+                                <span>це один з видів манікюру, при якому ми робимо манікюр за допомогою спеціального
+                                    апарату і відповідних насадок (фрез)</span>
+                                <img src="img/icons/desc.svg" alt="description icon" width="15" height="15">
+                            </span></h3>
+                        <p class="service__price">
+                            <span class="service__price_item">400 грн</span>
+                            <span class="service__price_icon">
+                                <img src="img/icons/checked.svg" alt="checked icon" width="22" height="15">
+                            </span>
+                        </p>
+                    </li>
+                    <li class="service__item js-service-item">
+                        <button class="service__close">
+                            <img src="img/icons/close-service.svg" alt="close icon" width="10" height="10"
+                                class="service__close_image">
+                        </button>
+                        <h3 class="service__subtitle"><i>апаратний манікюр</i><span class="service__desc">
+                                <span>це один з видів манікюру, при якому ми робимо манікюр за допомогою спеціального
+                                    апарату і відповідних насадок (фрез)</span>
+                                <img src="img/icons/desc.svg" alt="description icon" width="15" height="15">
+                            </span></h3>
+                        <p class="service__price">
+                            <span class="service__price_item">120 - 190 грн</span>
+                            <span class="service__price_icon">
+                                <img src="img/icons/checked.svg" alt="checked icon" width="22" height="15">
+                            </span>
+                        </p>
+                    </li>
+                    <li class="service__item js-service-item">
+                        <button class="service__close">
+                            <img src="img/icons/close-service.svg" alt="close icon" width="10" height="10"
+                                class="service__close_image">
+                        </button>
+                        <h3 class="service__subtitle"><i>декоративний манікюр</i><span class="service__desc">
+                                <span>це один з видів манікюру, при якому ми робимо манікюр за допомогою спеціального
+                                    апарату і відповідних насадок (фрез)</span>
+                                <img src="img/icons/desc.svg" alt="description icon" width="15" height="15">
+                            </span></h3>
+                        <p class="service__price">
+                            <span class="service__price_item">500 грн</span>
+                            <span class="service__price_icon">
+                                <img src="img/icons/checked.svg" alt="checked icon" width="22" height="15">
+                            </span>
+                        </p>
+                    </li>
+                </ul>
+                <button class="service__button js-open-third">Далі</button>
+            </div>
+            <!-- third block -->
+            <div class="third__block js-third-block">
+                <button type="button" class="third__back js-back-to-service">
+                    <img src="img/icons/back.svg" alt="back icon" width="21" height="21">
+                </button>
+                <p class="third__title">Оформлення запису</p>
+                <div class="third__order">
+                    <p class="third__place"><img src="img/icons/place.svg" alt="place icon" width="20"
+                            height="20">Виберіть ваше місце знадходження</p>
+                    <div class="third__address address">
+                        <img src="img/icons/address.svg" alt="address icon" class="address__image" width="40"
+                            height="40">
+                        <p class="address__text">
+                            <span class="address__city"><span class="js-city-name">Київ</span></span>
+                            <span class="address__street"><span class="js-city-area">Святошиньский район</span></span>
+                        </p>
+                    </div>
+                    <button type="button" class="third__add js-open-city">ЗМІНИТИ</button>
+                </div>
+                <div class="third__order">
+                    <p class="third__place"><img src="img/icons/service.svg" alt="place icon" width="23"
+                            height="23">Виберіть послугу</p>
+                    <ul class="third__list js-third-list"></ul>
+                    <button type="button" class="third__add js-open-service"><img src="img/icons/plus.svg"
+                            alt="plus icon" width="24" height="25"></button>
+                </div>
+                <div class="third__order">
+                    <p class="third__place"><img src="img/icons/user.svg" alt="place icon" width="23"
+                            height="23">Виберіть
+                        фахівця</p>
+                    <button type="button" class="third__add js-open-master"><img src="img/icons/plus.svg"
+                            alt="plus icon" width="24" height="25"></button>
+                </div>
+            </div>
+            <!-- master block -->
+            <div class="master__block js-master-block">
+                <button type="button" class="master__back js-back-to-third">
+                    <img src="img/icons/back.svg" alt="back icon" width="21" height="21">
+                </button>
+                <p class="master__title">Оберіть майстра</p>
+                <ul class="master__list">
+                    <li class="master__item js-open-calendar">
+                        <div class="master__mobile mobile">
+                            <img src="img/section/master/master-1.jpg" alt="master profile" class="mobile__image"
+                                width="80" height="80">
+                            <div class="mobile__text">
+                                <h3 class="mobile__name">Вероніка орлова</h3>
+                                <p class="mobile__city"><img src="img/icons/place.svg" alt="" width="15"
+                                        height="15">м.Київ,
+                                    вул.Печерська 11</p>
+                            </div>
+                        </div>
+                        <img src="img/section/master/master-1.jpg" alt="master profile" class="master__image"
+                            width="160" height="160">
+                        <div class="master__text">
+                            <h3 class="master__name">Вероніка орлова</h3>
+                            <p class="master__city"><img src="img/icons/place.svg" alt="" width="15" height="15">м.Київ,
+                                вул.Печерська 11</p>
+                            <p class="master__date">Найближчим часом: <span>вт, 21-го квітня</span></p>
+                            <div class="master__time">
+                                <button class="master__hours js-today-hours">11:00</button>
+                                <button class="master__hours js-today-hours">13:00</button>
+                            </div>
+                        </div>
+                        <button class="master__button js-new-time">інший час</button>
+                    </li>
+                    <li class="master__item js-open-calendar">
+                        <div class="master__mobile mobile">
+                            <img src="img/section/master/master-2.jpg" alt="master profile" class="mobile__image"
+                                width="80" height="80">
+                            <div class="mobile__text">
+                                <h3 class="mobile__name">Анастасія Вітрова</h3>
+                                <p class="mobile__city"><img src="img/icons/place.svg" alt="" width="15"
+                                        height="15">м.Львів, вул.Коновальця 9</p>
+                            </div>
+                        </div>
+                        <img src="img/section/master/master-2.jpg" alt="master profile" class="master__image"
+                            width="160" height="160">
+                        <div class="master__text">
+                            <h3 class="master__name">Анастасія Вітрова</h3>
+                            <p class="master__city"><img src="img/icons/place.svg" alt="" width="15"
+                                    height="15">м.Львів, вул.Коновальця 9</p>
+                            <p class="master__date">Найближчим часом: <span>вт, 22-го квітня</span></p>
+                            <div class="master__time">
+                                <button class="master__hours js-today-hours">17:00</button>
+                                <button class="master__hours js-today-hours">18:00</button>
+                            </div>
+                        </div>
+                        <button class="master__button js-new-time">інший час</button>
+                    </li>
+                    <li class="master__item js-open-calendar">
+                        <div class="master__mobile mobile">
+                            <img src="img/section/master/master-3.jpg" alt="master profile" class="mobile__image"
+                                width="80" height="80">
+                            <div class="mobile__text">
+                                <h3 class="mobile__name">Вероніка Виник</h3>
+                                <p class="mobile__city"><img src="img/icons/place.svg" alt="" width="15"
+                                        height="15">м.Київ, вул.Печерська 11</p>
+                            </div>
+                        </div>
+                        <img src="img/section/master/master-3.jpg" alt="master profile" class="master__image"
+                            width="160" height="160">
+                        <div class="master__text">
+                            <h3 class="master__name">Вероніка Виник</h3>
+                            <p class="master__city"><img src="img/icons/place.svg" alt="" width="15" height="15">м.Київ,
+                                вул.Печерська 11</p>
+                            <p class="master__date">Найближчим часом: <span>вт, 23-го квітня</span></p>
+                            <div class="master__time">
+                                <button class="master__hours js-today-hours">12:30</button>
+                                <button class="master__hours js-today-hours">14:00</button>
+                            </div>
+                        </div>
+                        <button class="master__button js-new-time">інший час</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- calendar block -->
+            <div class="calendar__block js-calendar-block">
+                <button type="button" class="calendar__back js-back-to-master">
+                    <img src="img/icons/back.svg" alt="back icon" width="21" height="21">
+                </button>
+                <p class="calendar__title">Оберіть майстра</p>
+                <div class="calendar__inner">
+                    <div class="calendar__wrapper">
+                        <div class="date__block">
+                            <img src="img/icons/left-arrow.svg" alt="left-arrow" class="left__control">
+                            <div class="calendar__month-title"></div>
+                            <button class="calendar__open"><img src="img/icons/arrow-to-bottom.svg"
+                                    alt="arrow to bottom" width="12" height="6" class="calendar__arrow_bottom"></button>
+                            <div class="calendar__year js-calendar-year"></div>
+                            <img src="img/icons/right-arrow.svg" alt="right-arrow" class="right__control">
+                        </div>
+                        <div class="container">
+                            <div class="calendar__month">
+                                <div class="calendar__weekdays">
+                                    <div>Пн</div>
+                                    <div>Вт</div>
+                                    <div>Ср</div>
+                                    <div>Чт</div>
+                                    <div>Пт</div>
+                                    <div>Сб</div>
+                                    <div>Нд</div>
+                                </div>
+                                <div class="calendar__days">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="calendar__button js-open-last">Далі</button>
+                <div class="calendar__time">
+                    <ul class="calendar__list">
+                        <li class="calendar__item js-calendar-time">09:00</li>
+                        <li class="calendar__item js-calendar-time">09:30</li>
+                        <li class="calendar__item js-calendar-time">10:00</li>
+                        <li class="calendar__item js-calendar-time">10:40</li>
+                        <li class="calendar__item js-calendar-time">11:00</li>
+                        <li class="calendar__item js-calendar-time">12:30</li>
+                        <li class="calendar__item js-calendar-time">13:00</li>
+                        <li class="calendar__item js-calendar-time">14:30</li>
+                        <li class="calendar__item js-calendar-time">15:00</li>
+                        <li class="calendar__item js-calendar-time">15:20</li>
+                        <li class="calendar__item js-calendar-time">16:00</li>
+                        <li class="calendar__item js-calendar-time">16:30</li>
+                        <li class="calendar__item js-calendar-time">17:00</li>
+                        <li class="calendar__item js-calendar-time">17:30</li>
+                        <li class="calendar__item js-calendar-time">18:00</li>
+                        <li class="calendar__item js-calendar-time">18:30</li>
+                        <li class="calendar__item js-calendar-time">19:00</li>
+                        <li class="calendar__item js-calendar-time">19:30</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- last block -->
+            <div class="last__block js-last-block">
+                <button type="button" class="second__back js-back-to-calendar">
+                    <img src="img/icons/back.svg" alt="back icon" width="21" height="21">
+                </button>
+                <p class="second__title">Оформлення запису</p>
+                <div class="second__order">
+                    <p class="second__place"><img src="img/icons/place.svg" alt="place icon" width="20"
+                            height="20">Виберіть ваше місце знадходження</p>
+                    <div class="second__address address">
+                        <img src="img/icons/address.svg" alt="address icon" class="address__image" width="40"
+                            height="40">
+                        <p class="address__text">
+                            <span class="address__city">м. <span class="js-city-name">Київ</span></span>
+                            <span class="address__street"><span class="js-city-area">Святошиньский район</span></span>
+                        </p>
+                    </div>
+                    <button type="button" class="second__add js-back-to-city">ЗМІНИТИ</button>
+                </div>
+                <div class="third__order last__third">
+                    <p class="third__place"><img src="img/icons/service.svg" alt="place icon" width="23"
+                            height="23">Виберіть послугу</p>
+                    <ul class="third__list js-third-list"></ul>
+                    <button type="button" class="third__add js-open-service"><img src="img/icons/plus.svg"
+                            alt="plus icon" width="24" height="25"></button>
+                </div>
+                <div class="third__order">
+                    <p class="last__place"><img src="img/icons/user.svg" alt="place icon" width="23"
+                            height="23">Виберіть
+                        фахівця</p>
+                    <p class="master__info">
+                        <span class="master__info_name js-master-info-name">Вероніка Орлова</span>
+                        <span class="master__info_date js-master-info-date">Понеділок, 14 Квітня</span>
+                        <span class="master__info_time js-master-info-time">11:00</span>
+                        <span class="master__info_remove">
+                            <img src="img/icons/close-service.svg" alt="close icon" width="12" height="12">
+                        </span>
+                    </p>
+                    <button type="button" class="third__add js-open-master"><img src="img/icons/plus.svg"
+                            alt="plus icon" width="24" height="25"></button>
+                </div>
+                <button class="last__button js-open-thanks">Далі</button>
+            </div>
+            <!-- thanks block -->
+            <div class="thanks__block js-thanks-block">
+                <div class="thanks__inner">
+                    <img src="img/icons/heart.svg" alt="heart icon" class="thanks__heart" width="70" height="70">
+                    <h2 class="thanks__title">Дякуємо за запис!</h2>
+                    <p class="thanks__desc">Ми дуже раді допомогти Вам отримати задоволення від манікюру. Для отримання
+                        конкретної інформації за Вашим записом переходьте до телеграмм боту</p>
+                    <button type="button" class="thanks__button">
+                        <img src="img/icons/telegram-thanks.svg" alt="telegram icon" width="60" height="60">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="img/icons/phone.svg" alt="phone" class="footer__link_icon" width="51" height="51">
+                        065 134-59-56
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="img/icons/telegram-logo-footer.svg" alt="telegram-logo" class="footer__link_icon"
+                            width="51" height="51">
+                        Easy nails
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a href="#" class="footer__link">
+                        <img src="img/icons/document.svg" alt="document" class="footer__link_icon" width="51"
+                            height="51">
+                        документ Оферти
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script defer src="js/main.js"></script>
+</body>
+
+</html>
